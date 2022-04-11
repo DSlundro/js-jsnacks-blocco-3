@@ -3,20 +3,20 @@
 
 // creo un array di stringhe
 console.log(`
-Start String`)
+Start String`);
 const startString = ['grogu', 'MANDO', 'Luke'];
 console.log(startString);
 
 // capitalizzo la prima lettera di ogni stringa
 console.log(`
-Final String`)
+Final String`);
 
 const finalString = [];
 for (let newString of startString) {
     // seleziono la prima lettera con "charAt" poi la capitalizzo e aggiungo tutte le altre lettere minuscole 
     newString = newString.charAt(0).toUpperCase() + newString.substring(1).toLowerCase();
     // pusho le parole ottenute nel nuovo array
-    finalString.push(newString)
+    finalString.push(newString);
 //console.log(newString);
 }
 console.log(finalString);

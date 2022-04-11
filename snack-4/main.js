@@ -33,12 +33,12 @@ let guidaNo = [];
 
 const guida = ciurma.map((ciurma) => {
     if (ciurma.eta < 18){
-        listaCompleta.push(`${ciurma.cognome} ${ciurma.nome} Non puoi guidare! Torna sulla nave!`)
+        listaCompleta.push(`${ciurma.cognome} ${ciurma.nome} Non puoi guidare! Torna sulla nave!`);
         guidaNo.push(`${ciurma.cognome} ${ciurma.nome} Non puoi guidare! Torna sulla nave!`);
         
     }
     else{
-        listaCompleta.push(`${ciurma.cognome} ${ciurma.nome} Non puoi guidare! Torna sulla nave!`)
+        listaCompleta.push(`${ciurma.cognome} ${ciurma.nome} Non puoi guidare! Torna sulla nave!`);
         guidaSi.push(`${ciurma.cognome} ${ciurma.nome} Puoi guidare! Puoi scendere dalla nave!`);
     }
 })

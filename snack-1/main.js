@@ -59,7 +59,7 @@ const cars = [
 ]
 console.log(`
 All cars`);
-console.log(cars)
+console.log(cars);
 
 // solo alimentazione benzina
 console.log(`
