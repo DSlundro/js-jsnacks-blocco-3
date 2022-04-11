@@ -3,7 +3,7 @@
 // Dividi le automobili in 3 array separati: nel primo array solo le auto a benzina, nel secondo solo le auto a diesel, nel terzo il resto delle auto.
 // Infine stampa separatamente i 3 array
 
-
+// lista macchine
 const cars = [
     {
         marca: 'Audi',
@@ -57,7 +57,24 @@ const cars = [
     }
 
 ]
-
+console.log(`
+All cars`);
 console.log(cars)
 
+// solo alimentazione benzina
+console.log(`
+Benzina`);
+const benzina = cars.filter(car => car.alimentazione === 'Benzina');
+console.log(benzina);
 
+// solo alimentazione diesel
+console.log(`
+Diesel`);
+const diesel = cars.filter(car => car.alimentazione === 'Diesel');
+console.log(diesel);
+
+// solo alimentazione diesel
+console.log(`
+Altro`);
+const altro = cars.filter(car => car.alimentazione !== "Benzina" && car.altro !== "Diesel");
+console.log(altro);
